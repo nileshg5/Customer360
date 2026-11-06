@@ -106,7 +106,6 @@ The container runs `python main.py` on every start, so `output/` is rebuilt from
 
 ## Notes
 
-- No ML churn model: the data has no behavioral signal (a test model scored AUC about 0.49), so risk is a transparent rule-based score.
 - Risk components that are missing (e.g. null revenue) are left out and the remaining weights are rescaled.
 - On Windows the `latest/` swap has a very short gap between two renames.
 - A production version would use cloud storage, Spark or Glue, an orchestrator such as Airflow, and a warehouse.
